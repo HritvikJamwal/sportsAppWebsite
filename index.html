@@ -3,11 +3,20 @@
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">.
   <title>Sports App</title>
+
   <link rel='stylesheet' href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
 <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
-<link rel='stylesheet' href='https://startbootstrap.com/templates/agency/font-awesome-4.1.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./style.css">
 <link rel="shortcut icon" type="image/png" href="./img/logo.png"/>
-</head>
+
+<!--Parallax js-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="parallax.min.js"></script>
+<!--Slick css and js-->
+<link rel="stylesheet" type="text/css" href="slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick-theme.css"/>
+
+
 <body>
 <!-- partial:index.partial.html -->
 <body id="page-top" class="index" data-pinterest-extension-installed="cr1.3.4">
@@ -63,16 +72,20 @@
     <!-- Header -->
     <header>
         <div class="horizontal-img">
-            <img class="website-banner"src="./img/website banner.jpg">
+            <img class="website-banner"src="./img/website_banner.jpg">
+            <div class="header-content">
+                <h2> Join The World's Largest Sports Professionals Network</h2>
+                <a href="https://play.google.com/store/apps/details?id=in.co.sportsapp.sportsapp" ><img id="googleplay-btn"src="./img/playstore.png"></a>
+            </div>
         </div>
 
     </header>
 
-    <section id="boxing" class="img-section">
-        <img class="horizontal-img sport-img" src="./img/boxing.jpg">
+    <main>
+<div class="parallax-images">
+    <img  class="thumbnail website-banner parallax-images" src="./img/boxing.jpg" alt="image">
+</div>
     </section>
-
-
     <!-- About Us section -->
     <section id="aboutus">
         <div class="gradient">
@@ -132,9 +145,9 @@
     </div>
     </section>
 
-    <section id="jogging" class="img-section">
-        <img class="horizontal-img sport-img" src="./img/jogging.jpg">
-    </section>
+    <div class="parallax-images">
+        <img  class="thumbnail website-banner parallax-images" src="./img/jogging.jpg" alt="image">
+    </div>
     
 
     <!--Journey Section-->
@@ -143,30 +156,163 @@
         <div class="gradient">
         <div class="section-head">
             <h3 class="heading-text">JOURNEY</h3>
-            
         </div>
+        <div id="number-div"class="card-row ">
+            <div class="cards">
+                <h2><span class='numscroller' data-min='0' data-max='5000' data-delay='5' data-increment='10'>1000</span>+</h2>
+                </h3>
+                <h4>Total Downloads</h4>
+                <img class="journey-icon"src="./img/download.png">
+               
+            </div>
+
+            <div class="cards">
+                <h2><span class='numscroller' data-min='0' data-max='3500' data-delay='7' data-increment='10'>1000</span>+</h2>
+                </h3>
+                <h4>Total Athletes</h4>
+                <img class="journey-icon"src="./img/players.png">
+               
+            </div>
+            <div class="cards">
+                <h2><span class='numscroller' data-min='0' data-max='500' data-delay='9' data-increment='10'>1000</span>+</h2>
+                </h3>
+                <h4 style="width: 95%;">Total Coaches</h4>
+                <img class="journey-icon"src="./img/coaches.png">
+               
+            </div>
+            <div class="cards">
+                <h2><span class='numscroller' data-min='0' data-max='150' data-delay='10' data-increment='10'>1000</span>+</h2>
+                </h3>
+                <h4>Total Sports Academies</h4>
+                <img class="journey-icon"src="./img/academies.png">
+               
+            </div>
+            <div class="cards">
+                <h2><span class='numscroller' data-min='0' data-max='5' data-delay='7' data-increment='10'>1000</span>+</h2>
+                </h3>
+                <h4>Total Sponsors</h4>
+                <img class="journey-icon"src="./img/download.png">
+               
+            </div>
+        </div>
+
+
+        
+
+
+        <hr class="underline">
+        <h2>Our Sponsors</h2>
+        <hr class="underline">
+        <div class="slider2">
+        <div class="slider-div2"> <img class="sponsor-img"src="./img/sponsor1.png" alt="Alcis">
+        </div>
+        <div class="slider-div2"><img class="sponsor-img"src="./img/sponsor2.png" alt="Cosco"></div>
+        <div class="slider-div2"><img class="sponsor-img"src="./img/sponsor3.jpg" alt="Hoverrobotix"></div>
+        <div class="slider-div2"><img class="sponsor-img"src="./img/sponsor4.png" alt="NFS"></div>
+        <div class="slider-div2"><img class="sponsor-img"src="./img/sponsor5.jpg" alt="NFS"></div>
+        <div class="slider-div2"><img class="sponsor-img"src="./img/sponsor6.png" alt="NFS"></div>
+        <div class="slider-div2"><img class="sponsor-img"src="./img/sponsor7.png" alt="NFS"></div>
+        <div class="slider-div2"><img class="sponsor-img"src="./img/sponsor8.png" alt="NFS"></div>
+
     </div>
+        <hr class="underline">
+        <h2>Testimonials</h2>
+        <hr class="underline">
+        <div class="slider1" >
+            <div class="slider-div slider-head"><img class="slider-head-img"src="./img/academies.png" alt="Academies"><h4>Academies</h4></div>
+            <div class="slider-div"><img class="slider-img" src="./img/academy1.jpg"><h4>South Paw Boxing Academy</h4><p class="slide-text">"Helped our players with Sponsorships. This app also promotes smaller academies. Academy students find relevant training and drill videos on SportsApp. Great work guys!!"</p></div>
+            <div class="slider-div"><img class="slider-img" src="./img/academy2.jpg"><h4>Uttaranchal Boys Cricket Academy</h4><p class="slide-text">"They created a well crafted promotional video for us completely free of cost. We find frequent leads in Delhi NCR on this app."</p></div>
+            
+            <div class="slider-div slider-head"><img class="slider-head-img"src="./img/coaches.png" alt="Academies"><h4>Coaches</h4></div>
+            <div class="slider-div"><img class="slider-img" src="./img/coach1.jpg"><h4>Coach K.K. Singh</h4><p class="slide-text">"Lovely to find and interact with lots of senior coaches on this app. Great initiative."</p></div>
+            <div class="slider-div"><img class="slider-img" src="./img/coach2.jpg"><h4>Coach Sanjay rawat</h4><p class="slide-text">"SportsApp made us a brilliant Academy video and helped our players with sponsorships. We regularly highlight our training drills on SportsApp."</p></div>
+            
+            <div class="slider-div slider-head"><img class="slider-head-img"src="./img/players.png" alt="Academies"><h4>Players</h4></div>
+            <div class="slider-div"><img class="slider-img" src="./img/player1.jpg"><h4>Amit Raj</h4><p class="player-detail">International MMA Fighter</p><p class="slide-text">"It's really easy to land Sponsorship on SportsApp through your profile. SportsApp is for people who genuinely want to pursue a career in sports."</p></div>
+            <div class="slider-div"><img class="slider-img" src="./img/player2.jpg"><h4>Himanshi Antil</h4><p class="player-detail">International Taekwondo Player</p><p class="slide-text">"A great way to support athletes. Highly recommended!!"</p></div>
+            <div class="slider-div"><img class="slider-img" src="./img/player3.jpg"><h4>Indraajit Patel</h4><p class="player-detail">Youth Olympian, Mumbai Marathon Winner</p><p class="slide-text">"It is easy to connect with brands for collaboration and sponsorships. Timely updates regarding events and trials help a lot."</p></div>
+            <div class="slider-div"><img class="slider-img" src="./img/player4.jpg"><h4>Kapil Chaudhary</h4><p class="player-detail">International Badminton Player</p><p class="slide-text">"Indian Sports needed such a platform."</p></div>
+            <div class="slider-div"><img class="slider-img" src="./img/player5.jpg"><h4>Nisar Ahmad</h4><p class="player-detail">Sprinter, 100m Gold winner at Khelo India Games</p><p class="slide-text">"A must-have app for budding athletes out there."</p></div>
+          </div>
+          
+    </div>
+
+</div>
 
     </section>
     
 
-    <section id="football" class="img-section">
-        <img class="horizontal-img sport-img" src="./img/football.jpg">
-    </section>
+    <div class="parallax-images">
+        <img  class="thumbnail website-banner parallax-images" src="./img/football.jpg" alt="image">
+    </div>
 
     <section id="team-section">
         <div class="gradient">
         <div class="section-head">
             <h3 class="heading-text">OUR TEAM</h3>
-            
-        </div>
+            </div>
+            <div class="card-row">
+
+                <div class="cards">
+                    
+                    
+                    <div class="in-div">
+                    <img class="dp"src="./img/member1.jpg">
+                
+                    <h4> Shashank Mishra</h4>
+                    <p>Founder and CEO</p>
+                    
+                </div>
+                <a class="linkedin-link" target="_blank"href="https://www.linkedin.com/in/shankmishra/"><img src = "img/linkedin.jpg"class="linkedin-logo"> </a>
+
+                </div>
+                
+                <div class="cards">
+                    
+                    
+                    <div class="in-div">
+                    <img id="member2"class="dp"src="./img/member2.jpg">
+                
+                    <h4> Mohit Yadav</h4>
+                    <p>Head of operations</p>
+                    
+                </div>
+                <a class="linkedin-link" target="_blank"href="https://www.linkedin.com/in/himanshu-nain/"><img src = "img/linkedin.jpg"class="linkedin-logo"> </a>
+
+                </div>
+                <div class="cards">
+                    
+                    
+                    <div class="in-div">
+                    <img class="dp"src="./img/member3.jpg">
+                
+                    <h4> Himanshu Nain</h4>
+                    <p>Head Of Operations</p>
+                    
+                </div>
+                
+                <a class="linkedin-link" target="_blank"href="https://www.linkedin.com/in/mohit-yadav-17b550115/"><img src = "img/linkedin.jpg"class="linkedin-logo"> </a>
+                </div>
+                <div class="cards">
+                    
+                    
+                    <div class="in-div">
+                    <img class="dp"src="./img/member4.jpg">
+                
+                    <h4>Prashant Chandra</h4>
+                    <p>Head of Sales</p>
+                    
+                </div>
+                <a class="linkedin-link" target="_blank" href="https://www.linkedin.com/in/prashant-chandra-096174147/"><img src = "img/linkedin.jpg"class="linkedin-logo"> </a>
+
+            </div>
+            </div>
+
+    </section>
+
+    <div class="parallax-images">
+        <img  class="thumbnail website-banner parallax-images" src="./img/tennis.jpg" alt="image">
     </div>
-
-    </section>
-
-    <section id="tennis" class="img-section">
-        <img class="horizontal-img sport-img" src="./img/tennis.jpg">
-    </section>
     
     <section id="contactus" class="font-responsive">
         <div class="gradient">
@@ -174,158 +320,21 @@
             <h3 class="heading-text">CONTACT US</h3>
             
         </div>
+
+        <div class="contact-icons-div">
+            <a href="https://www.facebook.com/sportsapp.in/" class="contact-icons"><img class="blue-icons" src="./img/facebook.ico" alt="facebook"></a>
+            <a href="https://www.instagram.com/sportsapp.in/" class="contact-icons"><img class="blue-icons"src="./img/instagram.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/company/13443819/admin/" class="contact-icons"><img class="blue-icons"src="./img/linkedin2.ico" alt="Linkedin"></a>
+
+
+
+        </div>
     </div>
 
     </section>
-
-    <!-- Clients Aside -->
-   
+</main>
 
     
-    
-    <!-- Portfolio Modals -->
-    <!-- Use the modals below to showcase details about your portfolio projects! -->
-
-    <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive" src="https://unsplash.imgix.net/uploads%2F1411419068566071cef10%2F7562527b?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=240c45655f09c546232a6f106688e502" alt="">
-                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                            <p>
-                                <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>
-                            <ul class="list-inline">
-                                <li>Date: July 2014</li>
-                                <li>Client: Round Icons</li>
-                                <li>Category: Graphic Design</li>
-                            </ul>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Heading</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="https://unsplash.imgix.net/44/9s1lvXLlSbCX5l3ZaYWP_hdr-1.jpg?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=f0a1db79752dbb04ec6d2aab7d17c7b0" alt="">
-                            <p><a href="https://designmodo.com/startup/?u=787">Startup Framework</a> is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
-                            <p>You can preview Startup Framework <a href="https://designmodo.com/startup/?u=787">here</a>.</p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="https://unsplash.imgix.net/46/Ov6ZY1zLTWmhPC0wFysP_IMG_2896_edt.jpg?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=6518e4df89659818f6c0392175a9c5e6" alt="">
-                            <p>Treehouse is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and spacious design perfect for people or startup companies looking to showcase their apps or other projects.</p>
-                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.</p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="https://unsplash.imgix.net/44/9s1lvXLlSbCX5l3ZaYWP_hdr-1.jpg?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=f0a1db79752dbb04ec6d2aab7d17c7b0" alt="">
-                            <p>Start Bootstrap's Agency theme is based on Golden, a free PSD website template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Golden is a modern and clean one page web template that was made exclusively for Best PSD Freebies. This template has a great portfolio, timeline, and meet your team sections that can be easily modified to fit your needs.</p>
-                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/golden-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 5 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="https://unsplash.imgix.net/46/Ov6ZY1zLTWmhPC0wFysP_IMG_2896_edt.jpg?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=6518e4df89659818f6c0392175a9c5e6" alt="">
-                            <p>Escape is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Escape is a one page web template that was designed with agencies in mind. This template is ideal for those looking for a simple one page solution to describe your business and offer your services.</p>
-                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/escape-one-page-psd-web-template/">FreebiesXpress.com</a>.</p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Portfolio Modal 6 -->
     <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
@@ -353,27 +362,34 @@
         </div>
     </div>
 
-    <!-- jQuery Version 1.11.0 -->
-    <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/jquery-1.11.0.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/bootstrap.min.js"></script>
+    
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/classie.js"></script>
-    <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/cbpAnimatedHeader.js"></script>
+   
 
     <!-- Contact Form JavaScript -->
-    <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/jqBootstrapValidation.js"></script>
-    <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/contact_me.js"></script>
+    
 
 
 <span style="height: 20px; width: 40px; min-height: 20px; min-width: 40px; position: absolute; opacity: 0.85; z-index: 8675309; display: none; cursor: pointer; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAADU0lEQVR42s2WXUhTYRjHz0VEVPRFUGmtVEaFUZFhHxBhsotCU5JwBWEf1EWEEVHQx4UfFWYkFa2biPJiXbUta33OXFtuUXMzJ4bK3Nqay7m5NeZq6h/tPQ+xU20zugjOxR/+7/O8539+5znnwMtNTExwJtMb3L/fiLv3botCSmUjeCaejTOb39AiFothfHxcFIrHY8RksZjBsckJcOIRMfFsHD/SsbExUYpnI8DR0dGUGjSb0byhEJp5Uqg5CTSzc2CQleJbMEj9/ywBcGRkJEk9DQqouEVQT1sK444yWI9UonmTjGqauVLEIlHa9x8lAMbj8SSpp0rwKGMVvg8P46vbg0C7na8z8JsMcgHe7jlEa+edRhiLy8n/TUMfu6EvLElk+U0WtGwrTrdfAGQf5J8iiK4LVzDU28t8JtMSocf8E+l68myaNFXm/6rXslLK7ay5TOunuRvZWpJuvwAYjUaTpOIWoquuAZ219RTaxKYp9BbjycoN5FvL9qH9TBX5rvoGdJythvXYSTxdtRnWylO/ZdqrLsGwszzhWQ593z2KlAwCYCQSSZJ6ehZ0W7bD9VBLgN0NCqr3qR7R2rBrL3pu3Sb/7nDlz2uy6cG0OXk0GTbZXzNp8trsPAQdTj6frlWzN2DcXZGKQQAMh8NJ6rpyHe+PnkCr/CAFdZyvpfpjuvkifLF9wIt1Wwlo0OHie1RvWrKa93RjzfzliTzPKz3ltB0/Tevmwp14wGUgHAzSOoUEwFAolFaaBSuhnslPRkJexUJtZ6v5HtUeLswl33n1BgEY5fvhs9sJ3FAiT+QYyyvoAQJuD0KBAFRTJNAuz5/s3gJgMBhMJwrVFRThM5tY5zUF/A4X1f2fvQTRLCuBreoim0YmAbqNJryvPEXeeq46kaNdkQ/1HCncbJKPs9ZSv2VHGfWsZ2hfkhKAfr8/pdxWKx4wwD69PmVfNSOL+lr2w+gYqHpWDtXt1xQ8AMlWU0e1lqLd/APRHoP8AJqWrQG9gYxcPMsvSJUvAA4MDKTUJ7MZLaVy8v+qT21tcDx/OemePr0RTkNrur4A6PP5xCgBsL+/X4wiQDpuuVxOeL1eMYmYeDY6sOp0z+B0OuHxeEQhxkJMFosJiSO/UinOI/8Pc+l7KKArAT8AAAAASUVORK5CYII=);"></span></body>
 <!-- partial -->
+
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
-<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
+<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.2.0/dist/simpleParallax.min.js"></script>
+
+<script type="text/javascript" src="slick.js"></script>
+<script type="text/javascript" src="incrementor.js"></script>
+
+
+ 
+</head>
+<script  src="./script.js"></script>
 
 </body>
 </html>

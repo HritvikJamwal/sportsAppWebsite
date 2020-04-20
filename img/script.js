@@ -38,8 +38,6 @@ window.onscroll = function() {
     $(this).scrollTop(0);
 });
 
-var menu = document.getElementById('menu');
-var navbar = document.getElementsByClassName('navbar-default');
-menu.addEventListener('click', function(){
-  navbar.style.maxHeight = "10000px";
-});
+
+
+$('.parallax').parallax({imageSrc: '/img/boxingnew.jpg'});

@@ -7,6 +7,12 @@
 body {
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    
+}
+
+main{
+    background-color: rgb(1,33,72);
+
 }
 
 .text-muted {
@@ -276,6 +282,7 @@ header {
     background-size: contain;
     margin-top: 100px;
     margin-bottom: 0;
+    
 
     
 }
@@ -313,16 +320,46 @@ header .intro-text .intro-heading {
 .horizontal-img{
     display: flex;
     width: 80%;
+    height: 500px;
     margin-left: 10%;
     margin-right: 10%;
     height: fit-content;
+    z-index: 0;
+    position: relative;
 }
 
+header h2{
+    width: 80%;
+    font-size: 1rem;
+    color: whitesmoke;
+    text-align: center;
+    margin-left: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#googleplay-btn{
+    margin-top: 10px;
+    width: 37%;
+    height: 22%;
+    margin-right: 20px;
+}
+.header-content{
+    text-align: center;
+    height: 70%;
+    width: 60%;
+    
+    position: absolute;
+    z-index: 2;
+    margin: 9%;
+    margin-top: 7%;
+    margin-left: 4%;
+
+}
 .website-banner{
     width: 100%;
     height: 100%;
     box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
-    z-index: 100;
+    
 }
 
 .img-section{
@@ -447,14 +484,7 @@ header .intro-text .intro-heading {
 
 }
 
-#team-section{
-    background-image: url(img/background1.jpg);
-    width: 100%;
-    height: auto;
-    box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
-    margin: 0;
-    padding: 0;
-}
+
 
 #contactus{
     background-image: url(img/background1.jpg);
@@ -469,6 +499,350 @@ header .intro-text .intro-heading {
     font-size: 1.9rem;
 }
 
+/*Parallax Section*/
+.parallax-window {
+    height: 125px;
+    background: transparent;
+    }
+
+
+.parallax-div{
+    width: 100%; 
+    background-color: rgb(1,33,72)
+}
+
+.parallax-img{
+    width: 80%; 
+    margin-left: 10%;
+     margin-right: 10%; 
+}
+
+/*Team section*/
+
+#team-section{
+    background-image: url(img/background1.jpg);
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+#team-section .cards{
+    box-shadow: none;
+    background: none;
+    width: 50%;
+    height: 200px;
+    flex-direction: column;
+    align-items: center;
+    transition: ease-in-out 0.3s;
+}
+
+#team-section .cards:hover{
+    box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+    
+    
+}
+
+
+.dp{
+    padding-top: 10px;
+    z-index: 10;
+    border-radius: 50%;
+    height: 100px;
+    
+    
+    align-self: center;
+    
+}
+
+#team-section h4{
+    color: white;
+
+    margin: 2px;
+    margin-top: 10px;
+    padding: 0;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+#team-section p{
+    color: white;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+.round-btn{
+    height: 20%;
+    width: 15%;
+    
+    border-radius: 50%;
+    background-color: #222;
+}
+
+.round-btn:hover{
+    background-color: #17d0d5;
+}
+
+
+#team-section a{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    display: block;
+}
+.linkedin-link{
+    display: block;
+    width: 100%;
+    height: 0;
+    background-color: #17d0d5;
+    text-align: center;
+    transition: ease-in-out 0.3s;
+    filter: brightness(0.9);
+    
+}
+
+.linkedin-link:hover{
+    filter: brightness(1.2);
+}
+#team-section .animated-div{
+    
+}
+#team-section .cards:hover .linkedin-link{
+    height: 30%;
+    z-index: 2;
+    
+}
+#team-section .cards:hover .linkedin-logo{
+    height: 25px;
+    width: 25px;
+}
+.in-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.linkedin-logo{
+    margin-top: 5px;
+    height: 0;
+    width: 0;
+    transition: ease-in-out 0.3s;
+}
+
+#member2{
+    width: 82px;
+}
+/*Team Section ends*/
+
+/*Testimonials Section*/
+
+
+.slider1{
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 82%;
+}
+.slider-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    padding: 0;
+    margin: 0;
+    margin-right: 10px;
+    height: 200px;
+}
+
+.slider-img{
+    border-radius: 50%;
+    height: 35%;
+    box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+
+    margin: 10px auto;
+}
+
+.slide-text{
+    text-align: center;
+    margin: 2px auto;
+    width: 90%;
+    color:  whitesmoke;
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: 500;
+
+}
+
+#journey h4{
+    
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 10px auto;
+    margin-bottom: 2px;
+}
+
+
+.player-detail{
+    color: #777;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 2px auto;
+}
+
+.slider-head-img{
+    border-radius: 50%;
+    height: 70%;
+    box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+
+    margin: 10px auto;
+}
+
+#journey h2{
+    font-size: 2.6rem;
+    margin: 20px auto;
+    color: #f1f1f1;
+    text-align: center;
+}
+
+.underline{
+    width: 30%;
+}
+
+/*Testimonials Section ends*/
+
+
+
+/*Sporsor Section begins*/
+
+
+.slider2{
+    width: 80%;
+    height: 150px;
+    margin: 10px auto;
+}
+.slider-div2{
+    margin: 0;
+    padding: 0;
+}
+
+.sponsor-img{
+    margin: 10px auto;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+#number-div{
+    margin: 0;
+    justify-content: space-evenly;
+
+}
+#journey .cards{
+    justify-content: center;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 43%;
+    height: 200px;
+    background: none;
+    box-shadow: none;
+}
+
+#journey h4{
+    font-size: 1.5rem;
+}
+
+.journey-icon{
+    border-radius: 50%;
+    width: 30%;
+}
+
+#journey h2{
+    margin-top: 10px;
+    font-size: 2rem;
+    color: white;
+}
+/*Sponsor Section Ends*/
+
+
+
+/*Contact us section begins*/
+
+.contact-icons-div{
+    display: flex;
+    width: 80%;
+    margin: 20px auto;
+    margin-bottom: 0;
+    height: auto;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+
+}
+
+.contact-icons{
+    display: block;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #222;
+    min-width: 50px;
+    margin: 10px auto;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out 0.3s;
+}
+
+.contact-icons:hover{
+    background-color: whitesmoke;
+}
+.blue-icons{
+    height: 80%;
+
+}
+/*Contact us section ends
+
+
+/*Parallax Section*/
+
+
+.parallax-images-div{
+    height: auto;
+    width: auto;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    background-color: rgb(1,33,72);
+}
+
+
+
+.parallax-images{
+    height: 120px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgb(1,33,72);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Media Tags */
 @media screen and (max-width:500px) {
     
@@ -480,6 +854,47 @@ header .intro-text .intro-heading {
 
 @media(min-width:600px){
 
+    .contact-icons{
+        width: 60px;
+        height: 60px;
+    }
+
+    .parallax-images{
+        height: 150px;
+    }
+
+    header h2{
+        width: 100%;
+        font-size: 1.8rem;
+        color: whitesmoke;
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    #googleplay-btn{
+        margin-top: 20px;
+        width: 37%;
+        height: 22%;
+    }
+
+    #team-section .cards{
+        height: 220px;
+    }
+
+    #team-section h4{
+        font-size: 1.5rem;
+    }
+
+    #team-section p{
+        font-size: 1.3rem;
+    }
+
+    .dp{
+        height: 120px;
+    }
+    .parallax-window{
+        height: 150px;
+    }
     .card-row{
         margin-top: 50px;
         
@@ -498,6 +913,19 @@ header .intro-text .intro-heading {
   
 
 @media(min-width:768px) {
+
+    .contact-icons{
+        width: 80px;
+        height: 80px;
+    }
+
+
+    .parallax-images{
+        height: 200px;
+    }
+    .parallax-window{
+        height: 175px;
+    }
 
     .heading-text{
         font-size: 2.3rem;
@@ -553,11 +981,19 @@ section h3.section-subheading {
 }
 
 @media(min-width:768px) {
+
+    #journey h2{
+        font-size: 2.8rem;
+    }
+    .underline{
+        width: 20%;
+    }
     section {
         padding: 150px 0;
     }
 
     
+
 }
 
 .service-heading {
@@ -757,6 +1193,28 @@ section h3.section-subheading {
 
 @media(min-width:768px) {
 
+    .slider1{
+        width: 70%;
+    }
+
+    header h2{
+        width: 100%;
+        font-size: 2.2rem;
+        color: whitesmoke;
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    #googleplay-btn{
+        margin-top: 20px;
+        width: 37%;
+        height: 22%;
+    }
+
+    #member2{
+        width: 90px;
+    }
+
     .card-row{
         margin-top: 60px;
     }
@@ -812,6 +1270,64 @@ section h3.section-subheading {
 
 @media(min-width:992px) {
 
+    .contact-icons{
+        width: 80px;
+        height: 80px;
+    }
+
+    .parallax-images{
+        height: 250px;
+    }
+
+    #journey h2{
+        font-size: 3rem;
+    }
+    .underline{
+        width: 15%;
+    }
+
+    .slider1{
+        width: 60%;
+    }
+
+    header h2{
+        width: 100%;
+        font-size: 2.4rem;
+        color: whitesmoke;
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    #googleplay-btn{
+        margin-top: 20px;
+        width: 37%;
+        height: 22%;
+    }
+
+    #team-section .cards{
+        height: 250px;
+    }
+
+    #team-section h4{
+        font-size: 1.6rem;
+    }
+
+    #team-section p{
+        font-size: 1.4rem;
+    }
+
+    #member2{
+        width: 110px;
+    }
+
+    .dp{
+        height: 130px;
+    }
+
+    .parallax-window{
+        height: 250px;
+    }
+
     .heading-text{
         font-size: 2.6rem;
     }
@@ -849,6 +1365,44 @@ section h3.section-subheading {
 }
 
 @media(min-width:1200px) {
+
+    .contact-icons{
+        width: 100px;
+        height: 100px;
+    }
+
+
+    .parallax-images{
+        height: 300px;
+    }
+
+    #journey h2{
+        font-size: 3.4rem;
+    }
+    .underline{
+        width: 10%;
+    }
+    .slider1{
+        width: 50%;
+    }
+
+    header h2{
+        width: 100%;
+        font-size: 3rem;
+        color: whitesmoke;
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    #googleplay-btn{
+        margin-top: 20px;
+        width: 37%;
+        height: 22%;
+    }
+
+    .parallax-window{
+        height: 350px;
+    }
 
     .heading-text{
         font-size: 2.8rem;
